@@ -942,12 +942,11 @@ textarea.form-input {
 \*-----------------------------------*/
 
 /**
- * responsive larger than 450px screen
+ * responsive larger than 150px screen
  */
 
 @media (min-width: 150px) {
-
-  /* service */
+/* service */
 
   .service-item {
     display: flex;
@@ -972,6 +971,9 @@ textarea.form-input {
 
   .project-img,
   .blog-banner-box { height: auto; }
+
+ 
+
 
 }
 
@@ -1005,8 +1007,48 @@ textarea.form-input {
 
 }
 
+@media (max-width:580px) {
 
 
+.info-content .name {
+    color: var(--white-2);
+    font-size: var(--fs-3);
+    font-weight: var(--fw-500);
+    letter-spacing: -0.25px;
+    margin-bottom: 10px;
+    margin-left: -2rem;
+}
+  textarea.form-input {
+   
+    width: 85%;
+  }
+
+}
+
+@media (max-width:535px) {
+  
+
+.info-content .name {
+    color: var(--white-2);
+    font-size: var(--fs-3);
+    font-weight: var(--fw-500);
+    letter-spacing: -0.25px;
+    margin-bottom: 10px;
+    font-size: 4vw;
+    margin-left: -2rem;
+}
+
+.info-content .title {
+  color: var(--white-1);
+  background: var(--onyx);
+  font-size: var(--fs-8);
+  font-weight: var(--fw-300);
+  width: max-content;
+  padding: 3px 12px;
+  border-radius: 8px;
+  margin-left: -3rem;
+}
+}
 
 
 /**
